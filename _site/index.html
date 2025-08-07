@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Agustín A. Diez Castillo</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-9b2072d125e605846c542c9c72aa544e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Agustín A. Diez Castillo">
+<meta property="og:image" content="https://wwww.uv.es/adiez/avatar.jpg">
+<meta property="og:site_name" content="Agustín A. Diez Castillo">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:title" content="Agustín A. Diez Castillo">
+<meta name="twitter:image" content="https://wwww.uv.es/adiez/avatar.jpg">
+<meta name="twitter:creator" content="@diezcastillo">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Agustín A. Diez Castillo</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./papers"> 
+<span class="menu-text">Papers</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./presentations"> 
+<span class="menu-text">Presentations</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="./blog.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<div class="quarto-about-trestles page-columns page-full">
+  <div class="about-entity">
+    <img src="avatar.jpg" class="about-image
+  rounded " style="width: 20em;">
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Agustín A. Diez Castillo</h1>
+</div>
+<div class="quarto-title-meta">
+  </div>
+</header>
+    <div class="about-links">
+  <a href="https://www.linkedin.com/in/agustin-diez-castillo/" class="about-link" rel="" target="">
+     <span class="about-link-text">LinkedIn</span>
+  </a>
+  <a href="https://bsky.app/profile/diezcastillo.bsky.social" class="about-link" rel="" target="">
+     <span class="about-link-text">🦋 Bluesky</span>
+  </a>
+  <a href="https://mastodon.social/@diezcastillo" class="about-link" rel="" target="">
+    <i class="bi bi-mastodon"></i>
+     <span class="about-link-text">Mastodon</span>
+  </a>
+  <a href="https://github.com/dieza" class="about-link" rel="" target="">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text">GitHub</span>
+  </a>
+  <a href="mailto:agustin.diez@uv.es" class="about-link" rel="" target="">
+     <span class="about-link-text">Email</span>
+  </a>
+  <a href="/blog.html" class="about-link" rel="" target="">
+     <span class="about-link-text">Blog</span>
+  </a>
+  <a href="/cv.pdf" class="about-link" rel="" target="">
+     <span class="about-link-text">CV</span>
+  </a>
+</div>
+  </div>
+  <div class="about-contents page-columns page-full"><main class="content page-columns page-full" id="quarto-document-content">
+<div class="column-page">
+<section id="bio" class="level2">
+<h2 data-anchor-id="bio">Bio</h2>
+<p>I’m an archaeologist, working at the University of Valencia on improving how we deliver Archaeology to the public. I’m Doctor in History from the University of Cantabria (1996), my Doctoral Thesis deals with the study of prehistoric settlement in the western valleys of Cantabria. Upon receiving the degree of Doctor, he moved to the University of California, Berkeley where, with a grant from the Marcelino Botín Foundation, he spent four years in the Department of Anthropology and the Archaeological Research Facility with Professor Margaret Conkey, until In 2000 he won one of the positions in the Spanish national program for Doctors and Technologists abroad. Since then he carries out his research activity in the Department of Prehistory and Archeology of the University of Valencia.</p>
+<p>My main lines of research are: Landscape archeology <a href="https://roderic.uv.es/items/6ba74481-b69f-4ed1-a9b0-deddf20c3df8">Use of main resources in the Cantabrian Mountains: an ecological prehistory of the valleys of the Deva and Nansa</a>, the cultural contact between the last communities of hunters -collectors and the first agricultural communities both in the Cantabrian area <a href="http://hdl.handle.net/10550/58629">Postglacial Coast &amp; Inland: The Epipaleolithic-Mesolithic-Neolithic Transitions in the Vasco-Cantabrian Region</a>, as in the Mediterranean <a href="https://doi.org/10.3989/tp.2003.v60.i2.80">Mas d’Is (Penàguila, Alicante) : Aldeas y recintos monumentales del Neolítico Inicial en el valle del Serpis</a> and the application of New Technologies to the study of heritage, in which the development of the SIDGEIPA Archaeological Information System stands out. In recent years his research and teaching task is focused on the application of Geographic Information Systems to the archaeological field, the result of which are works such as <a href="http://hdl.handle.net/10550/27891">Old stones New Technologies</a> and the application of chemistry in the field of archeology , field in which he has directed the Doctoral Thesis of Gianni Gallelo entitled <a href="http://hdl.handle.net/10550/34818">Western Mediterranean archeology. Chemical element levels in archaeological materials as a methodological tool</a>. The result of the direction of this Doctoral Thesis is the participation in different conferences among which the Colloquium Spectroscopicum Internationale (Pisa, 2017) and a series of articles stand out among which it deserves to stand out for its impact on the discipline <a href="https://doi.org/10.1016/j.jas.2012.10.005">Anthropogenic units fingerprinted by REE in archaeological stratigraphy: Mas d’Is (Spain) case Rare earth elements</a>.</p>
+<p>Mis investigaciones más actuales incluyen la dirección de proyectos internacionales, como el proyecto de excavación de los geoglifos de la Reserva Extravista Chico Mendes en la Amazonía brasileña financiado por el <a href="https://ipce.cultura.gob.es/investigacion/investigacion-arqueologica/proyectos-arqueologicos-exterior.html">IPCE</a> y la <a href="https://historia.nationalgeographic.com.es/a/que-revelan-geoglifos-amazonia_19719">Fundación PALARQ</a>, pero también proyectos de arqueología subacuática como la reexcavación del pecio de El Sec<a href="https://doi.org/10.5281/zenodo.7323649"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.7323649.svg" class="img-fluid" alt="DOI"></a>, o el estudio integral y extracción del pecio fenicio Mazarrón II, o el proyecto de intervención en el yacimiento lacustre de l’Estany Gran d’Almenara (Castelló).</p>
+<p>On this site I keep a list of <a href="papers">my publications</a>, <a href="talks">presentations</a>, and <a href="cv.pdf">my CV</a>, as well as a <a href="blog.html">technical blog</a>.</p>
+</section>
+<section id="selected-projects" class="level2">
+<h2 data-anchor-id="selected-projects">Selected Projects</h2>
+<section id="ongoing-fieldwork" class="level4">
+<h4 data-anchor-id="ongoing-fieldwork"><strong>Ongoing Fieldwork</strong></h4>
+<ul>
+<li><strong>El Sec Shipwreck</strong> (Mallorca): Re-examining Phoenician-Punic naval trade (4th century BCE), with cargo studies revealing Aegean-Punic hybridity</li>
+<li><strong>RITCONTEXT Project</strong>: Excavations at <em>Cueva del Sapo</em> and <em>Cueva Merinel</em> (Valencia), analyzing Iron Age ritual caves through 3D modeling and sensory archaeology .<br>
+</li>
+</ul>
+</section>
+</section>
+<section id="publications" class="level2">
+<h2 data-anchor-id="publications">Publications</h2>
+<section id="key-publications-selected-from-450-citations-h-index-28-google-scholar" class="level4">
+<h4 data-anchor-id="key-publications-selected-from-450-citations-h-index-28-google-scholar"><strong>Key Publications</strong> (Selected from 450+ citations, h-index 28) [Google Scholar]</h4>
+<ul>
+<li><strong>2022</strong>: <em>“Analysing the Sacred Landscape in the Iberian Iron Age: GIS, Caves and Ritual Performance”</em> (Zephyrus) – GIS models for ritual cave access .<br>
+</li>
+<li><strong>2017</strong>: <em>“Cocina Cave Revisited”</em> (with García-Puchol et al.) – Bayesian chronology for hunter-gatherer transitions .<br>
+</li>
+<li><strong>2013</strong>: <em>“Anthropogenic Units Fingerprinted by REE in Archaeological Stratigraphy”</em> – Methodological breakthrough in taphonomy .</li>
+</ul>
+</section>
+<section id="recent-edited-volumes" class="level4">
+<h4 data-anchor-id="recent-edited-volumes"><strong>Recent Edited Volumes</strong></h4>
+<ol type="1">
+<li><p><strong>2024</strong>: <em>Arte, pensamiento simbólico y modos de vida en la Prehistoria</em> (Eds. Marín-Arroyo, Moro-Abadía, Diez-Castillo)</p>
+<ul>
+<li><strong>Publisher</strong>: Universidad de Cantabria .<br>
+</li>
+<li><strong>Scope</strong>: A multidisciplinary analysis of symbolic thought in Prehistory, focusing on Iberian and Franco-Cantabrian cave art, funerary practices, and ethnoarchaeological approaches. Includes case studies from the Paleolithic to modern hunter-gatherer societies, with emphasis on sensory archaeology and ritual landscapes .</li>
+</ul></li>
+<li><p><strong>2025</strong>: <em>Over Land and Sea: The Long-Distance Trade of Ancient Greek Pottery</em> (Eds. Garés-Molero, Rodríguez-Pérez, Diez-Castillo)</p>
+<ul>
+<li><strong>Publisher</strong>: BAR International Series .<br>
+</li>
+<li><strong>Scope</strong>: Examines Mediterranean trade routes of Greek ceramics (8th–4th centuries BCE), combining unpublished shipwreck data (e.g., <em>El Sec</em>, Mallorca) with GIS-based distribution models. Features contributions from 25+ scholars on ports, warehouses, and colonial networks from Iberia to Thrace .</li>
+</ul>
+<p>For full contributor lists or purchase details, refer to the publisher pages:<br>
+</p>
+<ul>
+<li><a href="https://www.editorial.unican.es/libro/arte-pensamiento-simbolico-y-modos-de-vida-en-la-prehistoria"><em>Arte, pensamiento simbólico…</em></a><br>
+</li>
+<li><a href="https://www.barpublishing.com/book/over-land-and-sea/"><em>Over Land and Sea</em></a></li>
+</ul></li>
+</ol>
+</section>
+<section id="github-repositories" class="level4">
+<h4 data-anchor-id="github-repositories">GitHub Repositories</h4>
+<p><a href="https://github.com/dieza/edeta_caves"><strong>RitContext</strong></a> | Analysing the sacred landscape in the Iberian Iron Age: GIS, caves and ritual performance | 2022 <a href="https://github.com/dieza/ancient_coins"><strong>Ancient Coins</strong></a> | R exercices with ancient_coins | 2021<br>
+<a href="https://github.com/dieza/curso_r"><strong>R para Humanidades</strong></a> | Curso R para humanidades | 2025<br>
+<a href="https://github.com/dieza/Puerta_Coroneria"><strong>Humanidades Digitales</strong></a> | Casos prácticos de aplicación de tecnologías 3D a la investigación en humanidades | 2025<br>
+<a href="https://github.com/dieza/la_poza"><strong>Archaeology and LiDAR</strong></a> |Archaeology and LiDAR | 2024</p>
+</section>
+<section id="academic-profiles" class="level4">
+<h4 data-anchor-id="academic-profiles">Academic profiles</h4>
+<p><a href="https://uv.academia.edu/AgustinDiezCastillo">Academia.edu</a> | <a href="https://orcid.org/my-orcid?orcid=0000-0001-9122-2941">ORCID</a> | <a href="https://www.scopus.com/authid/detail.uri?authorId=57210862555">Scopus</a> | <a href="https://dialnet.unirioja.es/servlet/autor?codigo=261252">Dialnet</a> | <a href="https://www.webofscience.com/wos/author/record/L-6336-2015">Web of Science</a></p>
+</section>
+</section>
+</div>
+
+
+</main></div>
+</div>
+ <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/wwww\.uv\.es\/adiez");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Copyright 2025 Agustín A. Diez Castillo. Except where otherwise noted, all text and images licensed CC-BY-NC 4.0.</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -1,0 +1,188 @@
+---
+title: "Isaac_Ullah"
+format: html
+#editor: visual
+---
+
+## Agustín A. Diez Castillo after Google Scholar
+
+Agustín A. Diez Castillo is a researcher whose work has been recognized in the field of Archaeology. His contributions can be explored through his Google Scholar profile, which provides access to his publications, citations, and research impact. His profile can be found at [Google Scholar](https://scholar.google.com/citations?user=epHJTB0AAAAJ). So we know that google id is epHJTB0AAAAJ
+
+## Let's do some research in his publications
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+library(tidyverse)
+library(vroom)
+library(ggsci)
+library(scholar)
+load("gs.RData")
+```
+
+## Introduction
+
+The R package scholar allows you to access Google Scholar citation data using the Google Scholar ID. I’m still exploring the possibilities, but the package is very cool.
+
+The number of queries to the API is monitored, so be careful how you structure your code. Many of my chunks are “commented-out” so that they will not run. The data has been saved and loaded into the R environment so the queries do not need to be repeated.
+
+Get Scholar Profile Information We can use Agustín A. Diez Castillo as an example.
+
+Find their ID from the URL of the webpage (epHJTB0AAAAJ). There are ways to search by name too with the package. You can add options to executable code like this
+
+Get the basic profile data for Isaac (Avoid running this line more than once.)
+
+```{r}
+iu_id <- "epHJTB0AAAAJ"
+#iu_profile <- get_profile(iu_id) 
+```
+
+Let's see the profile data
+
+```{r}
+iu_profile
+```
+
+## Get the publications
+
+We can get the publications for Isaac Ullah using the `get_publications` function. This will return a data frame with all of his publications.
+
+```{r}
+#iu_publications <- get_publications(iu_id)
+# Save the publications to a file
+# vroom::vroom_write(iu_publications, "iu_publications.csv")
+# Load the publications from a file
+#iu_publications <- vroom::vroom("iu_publications.csv")
+# View the first few rows of the publications data
+iu_publications %>%
+  head(10) %>%
+  select(title, year, cites, cid)
+
+iu_pubs <- iu_publications %>%
+  as_tibble()
+iu_pubs
+```
+
+## Get the citations
+
+We can get the citations for Agustín A. Diez Castillo using the `get_citation_history` function. This will return a data frame with all of his citations.
+
+```{r}
+iu_citations <- get_citation_history(iu_id)
+# Save the citations to a file
+# vroom::vroom_write(iu_citations, "iu_citations.csv")
+# Load the citations from a file
+#iu_citations <- vroom::vroom("iu_citations.csv")
+# View the first few rows of the citations data
+iu_citations %>%
+  head(10) %>%
+  select(year, cites)
+```
+
+##Get Author Google Citation History You can retrieve author citations by year.
+
+```{r}
+iu_history <- get_citation_history(iu_id) 
+```
+
+You can determine the number of citations per year, which is useful for understanding the impact of an author's work over time.
+
+```{r}
+iu_history <- iu_history %>%
+  as_tibble() %>%
+  mutate(cumal_cites = cumsum(cites))
+iu_history
+```
+
+## Plot the citation history
+
+```{r}
+iu_history %>%
+  ggplot(aes(x = year, y = cites)) +
+  geom_line() +
+  geom_point() +
+  labs(title = "A. A. Diez Castillo's Citation History",
+       x = "Year",
+       y = "Citations") +
+  theme_minimal() +
+  scale_x_continuous(breaks = seq(min(iu_history$year), max(iu_history$year), by = 1)) +
+  #scale_x_continuous(breaks=seq(from=2022, to=2024, by=1))+
+  theme(plot.title = element_text(hjust = 0.5))
+```
+
+```{r}
+iu_history %>%
+  ggplot() +
+  aes(x=year, y=cumal_cites) +
+  geom_line(lwd=1) +
+  scale_x_continuous(breaks=seq(from=2022, to=2025, by=1)) +
+  theme_bw()
+```
+
+## Get the top 10 publications
+
+```{r}
+pubids <- pull(iu_pubs, pubid)[1:10]
+iu_ach <- get_article_cite_history(iu_id, pubids[1])
+for(i in 2:10){
+ach <- get_article_cite_history(iu_id, pubids[i])
+iu_ach <- bind_rows(iu_ach, ach)
+}
+```
+
+The result links the article via the pubid. However, you could devise ways to join this to data such as journal-year, etc.
+
+```{r}
+iu_ach <- iu_ach %>%
+  as_tibble()
+iu_ach
+```
+
+# Visualize the yearly citations.
+
+```{r}
+iu_ach %>%
+  ggplot() +
+  aes(x=year, y=cites, color=pubid) +
+  geom_line(lwd=1) +
+  scale_color_aaas() +
+  theme_bw()
+```
+
+Determine cumulative citations as visualize.
+
+```{r}
+iu_ach %>%
+  group_by(pubid) %>%
+  mutate(cumal_cites = cumsum(cites)) %>%
+  ggplot() +
+  aes(x=year, y=cumal_cites, color=pubid) +
+  geom_line(lwd=1) +
+  scale_color_aaas() +
+  theme_bw()
+```
+
+## Get Journal Rank
+
+You can get the journal rank for a publication using the `get_journal_rank` function. This will return a data frame with the journal rank for each publication. [Pete Pascuzzi](https://rstudio-pubs-static.s3.amazonaws.com/1298540_b7de748758954e23a0df587e83734009.html) has questions about this. The matching is fuzzy, but the result does not show the match between query and result.
+
+```{r}
+ iu_journals <- iu_pubs %>%
+   pull(journal) %>%
+   unique()
+ #iu_jr <- get_journalrank(journals=iu_journals, max.distance=0.1)
+```
+
+```{r}
+#iu_jr <- iu_jr %>%
+#  as_tibble()
+```
+
+```{r}
+#iu_jr
+```
+
+```{r}
+#save.image("gs.RData")
+```

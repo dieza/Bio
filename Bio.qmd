@@ -1,0 +1,85 @@
+---
+title: "Bio"
+author: "Agustín A. Diez Castillo"
+---
+
+### **Prof. Agustín Diez-Castillo**
+
+**Full Professor of Prehistory and Archaeology**\
+*Department of Prehistory, Archaeology, and Ancient History, Universitat de València*
+
+#### **Academic Background**
+
+-   **PhD in Prehistory** (1996, University of Cantabria): Dissertation on prehistoric settlement patterns in the Nansa and Deva valleys (Cantabria), supervised by Dr. Manuel R. González Morales .\
+-   **Postdoctoral Fellowship** (1996–2000, UC Berkeley): Funded by the Marcelino Botín Foundation, focused on anthropological and archaeological methodologies .
+
+#### **Research Focus**
+
+1.  **Landscape Archaeology & GIS Applications**:
+    -   Pioneering use of **Geographic Information Systems (GIS)** for analyzing prehistoric settlements, ritual landscapes (e.g., Iberian Iron Age caves), and transhumance routes .\
+    -   Recent work includes sacred landscape studies in Edeta (Valencia), modeling ritual journeys to caves like *Cueva del Sapo or Cueva Merinel* using GIS-based visibility and mobility analyses .
+2.  **Interdisciplinary Projects**:
+    -   Director of international excavations:
+        -   **Amazonian geoglyphs** (Brazil, funded by IPCE/Fundación PALARQ) .\
+        -   **Underwater archaeology**: Phoenician shipwreck (*Mazarrón II*), Moll de Sa Trona and El Sec .\
+    -   Co-author of high-impact publications in *Science*, *Quaternary International*, and *Journal of Archaeological Science* .
+3.  **Methodological Innovations**:
+    -   Developed protocols for **bone sample selection** using Rare Earth Elements (REEs) and multivariate statistics to study diagenesis and diet reconstruction.
+
+#### **Key Publications** (Selected from 450+ citations, h-index 28) \[Google Scholar\]
+
+-   **2022**: *"Analysing the Sacred Landscape in the Iberian Iron Age: GIS, Caves and Ritual Performance"* (Zephyrus) – GIS models for ritual cave access .\
+-   **2017**: *"Cocina Cave Revisited"* (with García-Puchol et al.) – Bayesian chronology for hunter-gatherer transitions .\
+-   **2013**: *"Anthropogenic Units Fingerprinted by REE in Archaeological Stratigraphy"* – Methodological breakthrough in taphonomy .
+
+#### **Leadership & Collaborations**
+
+-   **Director**, Department of Prehistory and Archaeology (Universitat de València) .\
+-   **Principal Investigator** for EU and Spanish-funded projects .\
+-   Collaborations with institutions like IPHAN (Brazil), ICMBio, and EMBRAPA on heritage conservation .
+
+#### **Teaching & Advocacy**
+
+-   Promotes **Free and Open-Source Software (FOSS)** for geospatial archaeology .\
+-   Supervised PhD dissertations on GIS applications and chemical archaeology (e.g., Gianni Gallelo’s work on Mediterranean archaeology) .
+
+#### **Recent Edited Volumes**
+
+1.  **2024**: *Arte, pensamiento simbólico y modos de vida en la Prehistoria* (Eds. Marín-Arroyo, Moro-Abadía, Diez-Castillo)
+
+    -   **Publisher**: Universidad de Cantabria .\
+    -   **Scope**: A multidisciplinary analysis of symbolic thought in Prehistory, focusing on Iberian and Franco-Cantabrian cave art, funerary practices, and ethnoarchaeological approaches. Includes case studies from the Paleolithic to modern hunter-gatherer societies, with emphasis on sensory archaeology and ritual landscapes .
+
+2.  **2025**: *Over Land and Sea: The Long-Distance Trade of Ancient Greek Pottery* (Eds. Garés-Molero, Rodríguez-Pérez, Diez-Castillo)
+
+    -   **Publisher**: BAR International Series .\
+    -   **Scope**: Examines Mediterranean trade routes of Greek ceramics (8th–4th centuries BCE), combining unpublished shipwreck data (e.g., *El Sec*, Mallorca) with GIS-based distribution models. Features contributions from 25+ scholars on ports, warehouses, and colonial networks from Iberia to Thrace .
+
+    For full contributor lists or purchase details, refer to the publisher pages:\
+
+    -   [*Arte, pensamiento simbólico...*](https://www.editorial.unican.es/libro/arte-pensamiento-simbolico-y-modos-de-vida-en-la-prehistoria)\
+    -   [*Over Land and Sea*](https://www.barpublishing.com/book/over-land-and-sea/)
+
+#### **Ongoing Fieldwork**
+
+-   **El Sec Shipwreck** (Mallorca): Re-examining Phoenician-Punic naval trade (4th century BCE), with cargo studies revealing Aegean-Punic hybridity
+-   **RITCONTEXT Project**: Excavations at *Cueva del Sapo* and *Cueva Merinel* (Valencia), analyzing Iron Age ritual caves through 3D modeling and sensory archaeology .\
+
+#### **Key Publications**
+
+-   **Science (2019)**: Co-authored global land-use and Iberian genomic studies .\
+-   **Trabajos de Prehistoria (2003)**: Neolithic settlement in the Serpis Valley .
+
+#### **Leadership**
+
+-   **Head**, Prehistory School (Universitat de València) (2022-2025).\
+-   **PI** for *Mazarrón II* and *El Sec* projects.
+
+#### 
+
+------------------------------------------------------------------------
+
+#### **Contact**
+
+-   **Email**: `agustin.diez@uv.es`\
+-   **Profiles**: [Google Scholar](https://scholar.google.com/citations?user=epHJTB0AAAAJ) \| [Academia.edu](https://uv.academia.edu/AgustinDiezCastillo) \| [ORCID](https://orcid.org/my-orcid?orcid=0000-0001-9122-2941) \| [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57210862555) \| [Dialnet](https://dialnet.unirioja.es/servlet/autor?codigo=261252) \| [Web of Science](https://www.webofscience.com/wos/author/record/L-6336-2015)

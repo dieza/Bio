@@ -1,0 +1,98 @@
+---
+title: "Ollama"
+editor: visual
+---
+
+# Ollamar en local
+
+This tutorial is a minor adaptation of [Stephen Turner's one](https://blog.stephenturner.us/p/use-r-to-prompt-a-local-llm-with)
+
+### Cargar librerías
+
+```{r}
+library(ollamar)
+library(tidyRSS)
+library(tidyverse)
+
+```
+#### Comprobar la conexión
+```{r}
+test_connection()
+```
+
+We're going to explore BioRxiv for the Paleontology subject where some archaeological papers can be found. First we *parse the feed*:
+
+```{r}
+feed <- tidyfeed("https://connect.biorxiv.org/biorxiv_xml.php?subject=paleontology")
+```
+Let's go what we got
+
+```{r}
+# Show a few titles
+head(feed$item_title, 3)
+```
+
+As expected some dinosaus and some climate change indicators. Here are the latest three titles (as of August 6, 2025)[1] The abstracts that go with them are in the feed$item_description column `{r} class(feed[,1:6])`. Let's see what are this three papers about.
+
+```{r}
+head(feed$item_description, 3)
+```
+Maybe the first one is somewhat related to the **Homo fiorensis**.
+
+```{r}
+summarized <-
+  feed |>
+  head(20) |>
+  select(title=item_title, abstract=item_description) |>
+  mutate(across(everything(), trimws)) |>
+  mutate(prompt=paste(
+    "\n\nI'm going to give you a paper's title and abstract.",
+    "Can you summarize this paper in 2 sentences?",
+    "\n\nTitle: ", title, "\n\nAbstract: ", abstract)) |>
+  mutate(response=purrr::map_chr(prompt, \(x) 
+                                 generate("llama3.1:8b",
+                                          prompt=x,
+                                          output="text")))
+```
+
+Here's an equivalent version without using the pipe operator:
+
+```{r}
+# Get first 20 rows
+subset_data <- head(feed, 20)
+
+# Select and rename columns
+selected_data <- select(subset_data, title = item_title, abstract = item_description)
+
+# Trim whitespace
+trimmed_data <- mutate(selected_data, across(everything(), trimws))
+
+# Create prompts
+prompted_data <- mutate(trimmed_data,
+                       prompt = paste(
+                         "\n\nI'm going to give you a paper's title and abstract.",
+                         "Can you summarize this paper in 2 sentences?",
+                         "\n\nTitle: ", title, "\n\nAbstract: ", abstract))
+
+# Generate responses
+summarized2 <- mutate(prompted_data,
+                    response = purrr::map_chr(prompt, function(x) {
+                      generate("llama3.1:8b", prompt = x, output = "text")
+                    }))
+```
+
+## Alternative with a different approach
+```{r}
+library(textrank)
+library(dplyr)
+
+summarized3 <- feed %>%
+  head(20) %>%
+  select(title = item_title, abstract = item_description) %>%
+  mutate(across(everything(), trimws)) %>%
+  mutate(response = sapply(abstract, function(abst) {
+    sentences <- textrank_sentences(abst)
+    paste(sentences$sentences[1:2], collapse = " ")  # Take top 2 sentences
+  }))
+```
+

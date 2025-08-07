@@ -1,0 +1,36 @@
+project:
+  type: website
+  resources:
+    - keybase.txt
+    - resume.pdf
+    - cv.pdf
+
+website:
+  title: "Agustín A. Diez Castillo"
+  site-url: https://wwww.uv.es/adiez
+  description: "GIS and Archaeology"
+  open-graph:
+    locale: en_US
+  twitter-card:
+    creator: "@diezcastillo"
+  comments:
+    utterances:
+      repo: dieza/quarto-website
+  navbar:
+    right:
+      - text: "Home"
+        href: index.html
+      - text: "Papers"
+        href: papers
+      - text: "Presentations"
+        href: presentations
+      - text: "Blog"
+        href: blog.html
+      - icon: rss
+        href: blog.xml
+  page-footer:
+    left: "© Copyright 2025 Agustín A. Diez Castillo. Except where otherwise noted, all text and images licensed CC-BY-NC 4.0."
+format:
+  html:
+    theme: [sandstone, _variables.scss]
+    css: styles.css
