@@ -1,7 +1,23 @@
+<<<<<<< Updated upstream
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
 
+=======
+>>>>>>> Stashed changes
 /.quarto/
 /_site/
+.DS_Store
+/index_files
+index_files/libs/.DS_Store
+docs/site_libs/.DS_Store
+docs/biblio_files/.DS_Store
+Bio_files/.DS_Store
+Bio_files/libs/.DS_Store
+docs/.DS_Store
+.DS_Store
+Bio_files/.DS_Store
+docs/.DS_Store
+docs/biblio_files/.DS_Store
+docs/site_libs/.DS_Store

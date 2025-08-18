@@ -47,7 +47,7 @@ On this site I keep a list of [my publications](papers), [presentations](talks),
 
 -   **2022**: *"Analysing the Sacred Landscape in the Iberian Iron Age: GIS, Caves and Ritual Performance"* (Zephyrus) – GIS models for ritual cave access .\
 -   **2021**: *"Renewed excavation at el Sec, Mallorca"* (INA Quaterly) - Underwater archaeology .\
--   **2019**: *"Archaeological assessment reveals Earth’s early transformation through land use"* (Science) - 
+-   **2019**: *"Archaeological assessment reveals Earth’s early transformation through land use"* (Science) -
 -   **2017**: *"Cocina Cave Revisited"* (with García-Puchol et al.) – Bayesian chronology for hunter-gatherer transitions .\
 -   **2013**: *"Anthropogenic Units Fingerprinted by REE in Archaeological Stratigraphy"* – Methodological breakthrough in taphonomy .
 
@@ -79,3 +79,5 @@ On this site I keep a list of [my publications](papers), [presentations](talks),
 
 [Academia.edu](https://uv.academia.edu/AgustinDiezCastillo) \| [ORCID](https://orcid.org/my-orcid?orcid=0000-0001-9122-2941) \| [Scopus](https://www.scopus.com/authid/detail.uri?authorId=57210862555) \| [Dialnet](https://dialnet.unirioja.es/servlet/autor?codigo=261252) \| [Web of Science](https://www.webofscience.com/wos/author/record/L-6336-2015)
 :::
+
+Rendered with Quarto {{1.7.32}}
