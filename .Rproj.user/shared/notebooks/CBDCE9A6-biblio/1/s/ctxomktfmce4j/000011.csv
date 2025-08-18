@@ -1,0 +1,6 @@
+"0","iu_history %>%"
+"0","  ggplot() +"
+"0","  aes(x=year, y=cumal_cites) +"
+"0","  geom_line(lwd=1) +"
+"0","  scale_x_continuous(breaks=seq(from=2022, to=2025, by=1)) +"
+"0","  theme_bw()"

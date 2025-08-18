@@ -1,0 +1,6 @@
+"0","pubids <- pull(iu_pubs, pubid)[1:10]"
+"0","iu_ach <- get_article_cite_history(iu_id, pubids[1])"
+"0","for(i in 2:10){"
+"0","ach <- get_article_cite_history(iu_id, pubids[i])"
+"0","iu_ach <- bind_rows(iu_ach, ach)"
+"0","}"

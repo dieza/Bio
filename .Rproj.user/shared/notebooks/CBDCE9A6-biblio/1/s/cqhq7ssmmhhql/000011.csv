@@ -1,0 +1,4 @@
+"0","iu_history <- iu_history %>%"
+"0","  as_tibble() %>%"
+"0","  mutate(cumal_cites = cumsum(cites))"
+"0","iu_history"

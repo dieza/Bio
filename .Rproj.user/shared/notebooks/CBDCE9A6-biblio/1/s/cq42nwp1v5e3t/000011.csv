@@ -1,0 +1,8 @@
+"0","iu_ach %>%"
+"0","  group_by(pubid) %>%"
+"0","  mutate(cumal_cites = cumsum(cites)) %>%"
+"0","  ggplot() +"
+"0","  aes(x=year, y=cumal_cites, color=pubid) +"
+"0","  geom_line(lwd=1) +"
+"0","  scale_color_aaas() +"
+"0","  theme_bw()"

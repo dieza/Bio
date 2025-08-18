@@ -1,0 +1,4 @@
+"0"," iu_journals <- iu_pubs %>%"
+"0","   pull(journal) %>%"
+"0","   unique()"
+"0"," #iu_jr <- get_journalrank(journals=iu_journals, max.distance=0.1)"

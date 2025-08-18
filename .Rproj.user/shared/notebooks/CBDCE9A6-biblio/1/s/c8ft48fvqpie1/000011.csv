@@ -1,0 +1,6 @@
+"0","iu_ach %>%"
+"0","  ggplot() +"
+"0","  aes(x=year, y=cites, color=pubid) +"
+"0","  geom_line(lwd=1) +"
+"0","  scale_color_aaas() +"
+"0","  theme_bw()"

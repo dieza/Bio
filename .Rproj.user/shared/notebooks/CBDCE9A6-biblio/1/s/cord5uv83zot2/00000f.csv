@@ -1,0 +1,6 @@
+"0","knitr::opts_chunk$set(warning = FALSE, message = FALSE)"
+"0","library(tidyverse)"
+"0","library(vroom)"
+"0","library(ggsci)"
+"0","library(scholar)"
+"0","load(""gs.RData"")"

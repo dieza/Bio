@@ -1,0 +1,14 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+/.quarto/
+.Rdata
+.httr-oauth
+.DS_Store
+Bio_files/.DS_Store
+Bio_files/libs/.DS_Store
+index_files/.DS_Store
+index_files/libs/.DS_Store
+index_files/libs/.DS_Store
